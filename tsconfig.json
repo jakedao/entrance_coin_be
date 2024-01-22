@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "CommonJS",
+      "outDir": "dist",
+      "rootDir": "src",
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "Node",
+      "baseUrl": "./"
+    },
+    "ts-node": {
+      "esm": true, 
+      "compiler": "typescript"
+    },
+    "include": ["src/**/*", "server.ts"],
+    "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
+  }
