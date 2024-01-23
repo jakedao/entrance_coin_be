@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.ts"
+    "start": "tsx server.ts"
   },
   "author": "Jake",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^20.11.5",
     "concurrently": "^8.2.2",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "tsx": "^4.7.0"
   }
 }

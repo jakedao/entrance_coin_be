@@ -1,18 +1,19 @@
 {
     "compilerOptions": {
       "target": "es6",
-      "module": "CommonJS",
+      "module": "esnext",
       "outDir": "dist",
       "rootDir": "src",
       "strict": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
-      "moduleResolution": "Node",
+      "moduleResolution": "node16",
       "baseUrl": "./"
     },
     "ts-node": {
       "esm": true, 
-      "compiler": "typescript"
+      "compiler": "typescript",
+      "experimentalSpecifierResolution": "node"
     },
     "include": ["src/**/*", "server.ts"],
     "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
