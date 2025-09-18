@@ -1,27 +1,33 @@
 {
-  "name": "entrance-test-be",
+  "name": "game-trading-be",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "./index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.ts"
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
   },
-  "author": "Jake",
+  "author": "Khanh Dao",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.2",
-    "express": "^4.18.2",
-    "mongoose": "^8.1.0",
-    "ts-node": "^10.9.2"
-  },
+  "description": "",
   "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/mongoose": "^5.11.97",
-    "@types/node": "^20.11.5",
-    "concurrently": "^8.2.2",
-    "nodemon": "^3.0.3"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "@types/request": "^2.48.13",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "http-proxy-middleware": "^3.0.5",
+    "mongoose": "^8.16.3",
+    "nodemon": "^3.1.10",
+    "request": "^2.88.2"
   }
 }
