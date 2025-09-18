@@ -1,0 +1,33 @@
+{
+  "name": "game-trading-be",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "author": "Khanh Dao",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "@types/request": "^2.48.13",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "http-proxy-middleware": "^3.0.5",
+    "mongoose": "^8.16.3",
+    "nodemon": "^3.1.10",
+    "request": "^2.88.2"
+  }
+}
