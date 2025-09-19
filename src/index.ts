@@ -7,8 +7,8 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-const ITEM_API = "/api/items";
-const COUPON_API = "/api/coupon";
+const ITEM_API = "/api/v1/items";
+const COUPON_API = "/api/v1/coupon";
 
 app.use(cors());
 

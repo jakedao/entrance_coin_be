@@ -55,7 +55,6 @@ router.route("/").post(async (req, res, next) => {
 
   try {
     const response = await axios.request(config);
-
     const data = response.data;
 
     if (data) {
